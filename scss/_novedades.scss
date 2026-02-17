@@ -1,0 +1,51 @@
+// _novedades.scss
+@use 'variables' as v;
+@use 'mixins';
+@use 'placeholders';
+@use 'maps';
+@use "sass:map";
+
+// Contenedor general de novedades
+.novedades {
+text-align: center;
+max-width: 1200px;
+margin: 20px auto;
+padding: v.$padding-general;
+background-color: map.get(maps.$colors, fondo-claro);
+}
+
+// Cada card de novedad
+.novedad {
+@extend %card-base;
+@include mixins.sombra(novedad);
+
+display: inline-block;
+vertical-align: top;
+width: 300px;
+margin: v.$padding-general;
+padding: 15px;
+border-radius: v.$radio-card;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: v.$radio-borde;
+    margin-bottom: v.$padding-general;
+}
+
+h2 {
+    @extend %titulo-base;
+    font-size: map.get(maps.$font-sizes, h2);
+    color: map.get(maps.$colors, texto);
+}
+
+p {
+    font-size: map.get(maps.$font-sizes, texto);
+    color: #555; 
+
+a {
+    @extend %btn-base;
+    @include mixins.boton(map.get(maps.$colors, primario));
+}
+}

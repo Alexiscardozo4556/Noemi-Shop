@@ -1,0 +1,47 @@
+// _maps.scss
+@use 'variables' as v;
+
+
+// Paleta de colores
+$colors: (
+primario: v.$color-primario,
+secundario: v.$color-secundario,
+texto: v.$color-texto,
+texto-claro: v.$color-texto-claro,
+fondo: v.$color-fondo,
+fondo-claro: v.$color-fondo-claro,
+fondo-seccion: v.$color-fondo-seccion,
+borde: v.$color-borde,
+footer: v.$color-footer,
+footer-texto: v.$color-footer-texto
+);
+
+// Tamaños tipográficos
+$font-sizes: (
+h1: v.$tamaño-h1,
+h2: v.$tamaño-h2,
+h3: v.$tamaño-h3,
+texto: v.$tamaño-texto
+);
+
+// Espaciados
+$spacings: (
+general: v.$padding-general,
+seccion: v.$padding-seccion,
+gap: v.$gap-general,
+gap-grilla: v.$gap-grilla
+);
+
+// Radios de borde
+$radiuses: (
+borde: v.$radio-borde,
+boton: v.$radio-boton,
+card: v.$radio-card
+);
+
+// Breakpoints
+$breakpoints: (
+mobile: 600px,
+tablet: 900px,
+desktop: 1200px
+);

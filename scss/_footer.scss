@@ -1,0 +1,31 @@
+// _footer.scss
+@use 'variables' as v;
+
+.footer {
+background-color: v.$color-footer;
+padding: v.$padding-general;
+color: v.$color-footer-texto;
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-item {
+    margin: v.$padding-general;
+    font-size: v.$tamaño-texto;
+}
+}
+
+// Pie de página 
+.pie-de-pagina {
+background-color: v.$color-footer;
+color: v.$color-footer-texto;
+text-align: center;
+padding: v.$padding-seccion;
+margin-top: 40px;
+font-size: v.$tamaño-texto;
+}

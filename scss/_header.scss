@@ -1,0 +1,21 @@
+// _header.scss corregido
+@use 'variables' as v;
+
+.menu-navegacion {
+background-color: v.$color-fondo-claro;
+width: 100%;
+
+.navbar-nav {
+    gap: v.$gap-general;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: v.$color-texto-claro;
+
+    &:hover {
+    color: v.$color-primario;
+    text-decoration: underline;
+    }
+}
+}

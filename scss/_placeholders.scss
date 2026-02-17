@@ -1,0 +1,42 @@
+// _placeholders.scss
+@use 'variables' as v;
+
+
+// Reset básico
+%reset {
+margin: 0;
+padding: 0;
+}
+
+// Tipografía base
+%texto-base {
+font-family: v.$fuente-principal;
+color: v.$color-texto;
+line-height: 1.6;
+}
+
+// Botón base
+%btn-base {
+display: inline-block;
+padding: 6px 14px;
+text-decoration: none;
+border-radius: v.$radio-boton;
+font-size: v.$tamaño-texto;
+transition: background-color 0.3s ease;
+}
+
+// Card base
+%card-base {
+background-color: v.$color-texto-claro;
+border: 1px solid v.$color-borde;
+border-radius: v.$radio-card;
+padding: v.$padding-general;
+text-align: center;
+}
+
+// Títulos base
+%titulo-base {
+text-align: center;
+margin: 10px 0;
+font-weight: bold;
+}

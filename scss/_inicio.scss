@@ -1,0 +1,49 @@
+// _inicio.scss
+@use 'variables' as v;
+@use 'mixins';
+@use 'placeholders';
+@use 'maps';
+@use "sass:map";
+
+// Sección título principal
+.titulo {
+@extend %titulo-base;
+font-size: map.get(maps.$font-sizes, h1);
+margin-bottom: v.$padding-general;
+margin-top: v.$padding-general;
+}
+
+// Subtítulo
+.subtitulo {
+@extend %titulo-base;
+font-size: map.get(maps.$font-sizes, h2);
+padding: v.$padding-general;
+color: #444; 
+}
+
+// Sección información ("Conócenos un poco")
+.informacion {
+background-color: map.get(maps.$colors, fondo-claro);
+padding: 30px;
+margin: 20px 0;
+text-align: center;
+border-radius: v.$radio-borde;
+
+h2 {
+    margin-bottom: 15px;
+    color: #222;
+    font-size: map.get(maps.$font-sizes, h2);
+}
+
+p {
+    margin: 0 auto 20px;
+    color: #444;
+    font-size: map.get(maps.$font-sizes, texto);
+}
+
+a {
+    @extend %btn-base;
+    @include mixins.boton(map.get(maps.$colors, primario));
+    font-size: 14px;
+}
+}

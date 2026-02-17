@@ -1,0 +1,347 @@
+/*estilos generales*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contacto form input[type=submit], p a, .productos-destacados article a, .informacion a {
+  display: inline-block;
+  padding: 6px 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.novedad, .productos-destacados article, .grilla .card {
+  background-color: #fff;
+  border: 1px solid #add;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.contacto h1, .subtitulo, h2, .titulo {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.titulo:hover {
+  color: #07c;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #333;
+}
+.subtitulo h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.subtitulo p {
+  font-size: 16px;
+  color: #333;
+}
+
+.menu-navegacion {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.menu-navegacion .navbar-nav {
+  gap: 20px;
+}
+.menu-navegacion .nav-link {
+  font-size: 18px;
+  color: #fff;
+}
+.menu-navegacion .nav-link:hover {
+  color: #07c;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333;
+  padding: 10px;
+  color: #ddd;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.footer .footer-container .footer-item {
+  margin: 10px;
+}
+
+.pie-de-pagina {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #444;
+}
+
+.informacion {
+  background-color: #f5f5f5;
+  padding: 30px;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+.informacion h2 {
+  margin-bottom: 15px;
+  color: #222;
+  font-size: 1.5rem;
+}
+.informacion p {
+  margin: 0 auto 20px;
+  color: #444;
+  font-size: 16px;
+}
+.informacion a {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #07c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.informacion a:hover {
+  background-color: rgb(0, 89.25, 153);
+}
+.informacion a {
+  font-size: 14px;
+}
+
+.productos-destacados {
+  background-color: #fafafa;
+  padding: 20px;
+  text-align: center;
+}
+.productos-destacados article {
+  width: 250px;
+  margin: 10px;
+  background-color: #fff;
+}
+.productos-destacados article img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.productos-destacados article h3 {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+.productos-destacados article p {
+  font-weight: bold;
+  color: #333;
+}
+.productos-destacados article a {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #07c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.productos-destacados article a:hover {
+  background-color: rgb(0, 89.25, 153);
+}
+
+.grilla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .grilla {
+    grid-template-columns: 1fr;
+  }
+}
+.grilla .card {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.grilla .card img {
+  flex: 1 1 250px;
+  max-width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.novedades {
+  text-align: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.novedad {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+p a {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #07c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+p a:hover {
+  background-color: rgb(0, 89.25, 153);
+}
+
+.nosotros {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+.nosotros p {
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.nosotros img {
+  display: block;
+  margin: 0 auto;
+  width: 50vh;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.contacto h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.contacto form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+.contacto form input[type=text],
+.contacto form input[type=email],
+.contacto form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #add;
+}
+.contacto form input[type=submit] {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #07c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.contacto form input[type=submit]:hover {
+  background-color: rgb(0, 89.25, 153);
+}
+.contacto form input[type=submit] {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin: 30px 0 15px;
+  color: #444;
+}
+
+section p, section h3 {
+  text-align: center;
+  margin: 8px 0;
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

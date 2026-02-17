@@ -1,0 +1,59 @@
+// _mixins.scss
+@use "variables" as v;
+@use 'placeholders';
+@use "sass:color";
+
+
+// Flexbox helpers
+@mixin flex-center($direction: row, $gap: 0) {
+display: flex;
+flex-direction: $direction;
+justify-content: center;
+align-items: center;
+gap: $gap;
+}
+
+
+// Botones reutilizables
+@mixin boton($bg-color, $text-color: v.$color-texto-claro) {
+display: inline-block;
+padding: 6px 14px;
+background-color: $bg-color;
+color: $text-color;
+text-decoration: none;
+border-radius: v.$radio-boton;
+font-size: v.$tamaño-texto;
+transition: background-color 0.3s ease;
+
+&:hover {
+    background-color: color.adjust($bg-color, $lightness: -10%);
+}
+}
+
+
+// Sombras dinámicas
+@mixin sombra($tipo: card) {
+@if $tipo == card {
+    box-shadow: v.$sombra-card;
+} @else if $tipo == novedad {
+    box-shadow: v.$sombra-novedad;
+}
+}
+
+
+// Tipografía escalable
+@mixin titulo($size, $color: $color-texto) {
+text-align: center;
+font-size: $size;
+color: $color;
+margin: 10px 0;
+}
+
+// Responsive breakpoints
+@mixin responsive($breakpoint) {
+@if $breakpoint == mobile {
+    @media (max-width: 600px) { @content; }
+} @else if $breakpoint == tablet {
+    @media (max-width: 900px) { @content; }
+}
+}

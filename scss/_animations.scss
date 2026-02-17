@@ -1,0 +1,50 @@
+// _animations.scss
+@use 'variables' as v;
+@use 'maps';
+@use 'mixins';
+@use 'placeholders';
+@use "sass:color";
+@use "sass:map";
+
+// Botones
+%btn-animado {
+@extend %btn-base;
+transition: transform 0.3s ease, background-color 0.3s ease;
+
+&:hover {
+    transform: scale(1.05);
+    background-color: color.scale(map.get(maps.$colors, primario), $lightness: -10%);
+}
+}
+
+// Cards (productos, novedades)
+%card-animada {
+@extend %card-base;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+&:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+}
+
+// Títulos
+%titulo-animado {
+@extend %titulo-base;
+transition: color 0.3s ease, letter-spacing 0.3s ease;
+
+&:hover {
+    color: map.get(maps.$colors, primario);
+    letter-spacing: 2px;
+}
+}
+
+// Imágenes
+%imagen-animada {
+transition: transform 0.4s ease, filter 0.4s ease;
+
+&:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+}

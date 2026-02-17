@@ -1,0 +1,25 @@
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.titulo:hover {
+  color: #07c;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #333;
+}
+.subtitulo h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.subtitulo p {
+  font-size: 16px;
+  color: #333;
+}
+
+/*# sourceMappingURL=t%C3%ADtulos.css.map */

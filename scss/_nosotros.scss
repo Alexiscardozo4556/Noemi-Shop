@@ -1,0 +1,30 @@
+// _nosotros.scss
+@use 'variables' as v;
+@use 'mixins';
+@use 'placeholders';
+@use 'maps';
+@use "sass:map";
+
+// Sección "Nosotros"
+.nosotros {
+  background-color: map.get(maps.$colors, fondo-claro);
+  text-align: center;
+  padding: v.$padding-seccion;
+
+  p {
+    font-size: map.get(maps.$font-sizes, texto);
+    color: map.get(maps.$colors, texto);
+    padding: v.$padding-general;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 50vh;
+    height: auto;
+    border-radius: v.$radio-borde;
+    @include mixins.sombra(card);
+  }
+}

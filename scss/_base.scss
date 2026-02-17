@@ -1,0 +1,14 @@
+// _base.scss
+@use 'variables' as v;
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: v.$fuente-principal;
+background-color: v.$color-fondo;
+color: v.$color-texto;
+line-height: 1.6;
+}

@@ -1,0 +1,30 @@
+// _titulos.scss
+@use 'variables' as v;
+
+
+.titulo {
+text-align: center;
+font-size: v.$tamaño-h1;  
+margin: v.$padding-general 0;
+
+&:hover {
+color: v.$color-primario;
+}
+}
+
+.subtitulo {
+text-align: center;
+font-size: v.$tamaño-h2;   
+padding: v.$padding-general;
+color: v.$color-secundario;
+
+h3 {
+    font-size: v.$tamaño-h3;
+    margin: v.$padding-general 0;
+}
+
+p {
+    font-size: v.$tamaño-texto;
+    color: v.$color-secundario;
+}
+}

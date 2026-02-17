@@ -1,0 +1,23 @@
+// style.scss
+
+// Reset y base
+@use 'reset';
+@use 'variables';
+@use 'mixins';
+@use 'placeholders';
+@use 'maps';
+@use "sass:map";
+@use 'base';
+@use 'títulos';
+@use 'animations';
+
+// Componentes globales
+@use 'header';
+@use 'footer';
+
+// Secciones principales
+@use 'inicio';
+@use 'productos';
+@use 'novedades';
+@use 'nosotros';
+@use 'contacto';

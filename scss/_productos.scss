@@ -1,0 +1,68 @@
+// _productos.scss
+@use 'variables' as v;
+@use 'mixins';
+@use 'placeholders';
+@use 'maps';
+@use "sass:map";
+
+// Sección productos destacados
+.productos-destacados {
+background-color: map.get(maps.$colors, fondo-seccion);
+padding: v.$padding-seccion;
+text-align: center;
+
+article {
+    @extend %card-base;
+    width: 250px;
+    margin: v.$padding-general;
+    background-color: map.get(maps.$colors, texto-claro);
+
+    img {
+    width: 100%;
+    height: auto;
+    border-radius: v.$radio-borde;
+    }
+
+    h3 {
+    margin: 10px 0 5px;
+    font-size: map.get(maps.$font-sizes, h3);
+    }
+
+    p {
+    font-weight: bold;
+    color: map.get(maps.$colors, texto);
+    }
+
+    a {
+    @extend %btn-base;
+    @include mixins.boton(map.get(maps.$colors, primario));
+    }
+}
+}
+
+// Grilla de productos
+.grilla {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: map.get(maps.$spacings, gap-grilla);
+padding: v.$padding-general;
+
+@include mixins.responsive(mobile) {
+    grid-template-columns: 1fr;
+}
+}
+
+.card {
+@extend %card-base;
+@include mixins.sombra();
+
+img {
+    width: 100%;       
+    height: 250px;
+    object-fit: cover;
+    border-radius: v.$radio-borde;
+}
+}
+
+
+
