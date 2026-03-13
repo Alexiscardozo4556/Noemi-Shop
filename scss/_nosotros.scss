@@ -22,9 +22,22 @@
   img {
     display: block;
     margin: 0 auto;
-    width: 50vh;
+    width: 100%;
     height: auto;
     border-radius: v.$radio-borde;
     @include mixins.sombra(card);
   }
+}
+@include mixins.responsive(mobile) {
+  .nosotros img {
+    width: 90%;
+  }
+}
+
+.nosotros img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.nosotros img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }

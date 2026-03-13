@@ -1,10 +1,17 @@
-// _footer.scss
 @use 'variables' as v;
+@use 'maps';
+@use "sass:map";
 
 .footer {
 background-color: v.$color-footer;
 padding: v.$padding-general;
 color: v.$color-footer-texto;
+border-top: 2px solid map.get(maps.$colors, primario);
+
+a {
+    color: v.$color-footer-texto;
+    &:hover { text-decoration: underline; }
+}
 
 .footer-container {
     display: flex;
@@ -17,15 +24,29 @@ color: v.$color-footer-texto;
 .footer-item {
     margin: v.$padding-general;
     font-size: v.$tamaño-texto;
-}
+    }
 }
 
-// Pie de página 
+// Pie de página
 .pie-de-pagina {
-background-color: v.$color-footer;
-color: v.$color-footer-texto;
-text-align: center;
-padding: v.$padding-seccion;
-margin-top: 40px;
-font-size: v.$tamaño-texto;
+    background-color: v.$color-footer;
+    color: v.$color-footer-texto;
+    text-align: center;
+    padding: v.$padding-seccion;
+    margin-top: 40px;
+    font-size: v.$tamaño-texto;
+}
+
+// Footer animado con grises
+.footer-animado {
+    background: linear-gradient(270deg, #333, #666, #999);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+  color: #fff; // texto blanco para contraste
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }

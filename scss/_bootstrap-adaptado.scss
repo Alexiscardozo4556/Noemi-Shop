@@ -1,0 +1,42 @@
+@use 'variables' as v;
+@use 'maps';
+@use 'mixins';
+@use 'placeholders';
+@use "sass:map";
+
+// 🔹 Adaptar variables de Bootstrap con tus maps
+$primary: map.get(maps.$colors, primario);
+$secondary: map.get(maps.$colors, secundario);
+$body-bg: map.get(maps.$colors, fondo-claro);
+$body-color: map.get(maps.$colors, texto);
+$font-family-base: v.$fuente-principal;
+
+// Importar Bootstrap con tus variables ya redefinidas
+@use "../node_modules/bootstrap/scss/bootstrap" as bs;
+// 🔹 Adaptar componentes Bootstrap a tu estilo
+.btn {
+    @extend %btn-base;
+    @include mixins.boton($primary);
+}
+
+.card {
+    @extend %card-base;
+    @include mixins.sombra(card);
+}
+
+h1, h2, h3 {
+    @extend %titulo-base;
+    color: map.get(maps.$colors, texto);
+}
+
+// 🔹 Ajustes responsive adicionales
+@include mixins.responsive(mobile) {
+.navbar {
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    padding: v.$padding-general;
+}
+}

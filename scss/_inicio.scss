@@ -44,6 +44,6 @@ p {
 a {
     @extend %btn-base;
     @include mixins.boton(map.get(maps.$colors, primario));
-    font-size: 14px;
+    font-size: map.get(maps.$font-sizes, texto);
 }
 }

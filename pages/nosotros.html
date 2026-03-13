@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conocé la historia de Noemí Shop: una tienda familiar que combina tradición e innovación, ofreciendo productos seleccionados con calidad, cercanía y atención personalizada.">
+    <meta name="keywords" content="Noemi Shop, nosotros, tienda familiar, tradición, innovación, calidad, atención personalizada, comunidad, confianza, misión">
     <title>Nosotros - Noemi Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <header class="menu-navegacion">
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="../assets/img/Noemi Shop.png" class="img-fluid" style="max-width: 200px;" alt="Logo de Noemi Shop"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-    <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="novedades.html">Novedades</a>
-        </li>
-    </ul>
-    </div>
-    </div>
-</nav>
+<header class="menu-navegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/img/noemishoplogo.png" class="img-fluid" style="max-width: 200px;" alt="Logo de Noemi Shop"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                    </li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
 </header>
 <main>
     <hr class="my-5 border-2 border-dark">
@@ -55,16 +57,30 @@
 <div>
     <hr class="my-5 border-2 border-dark">
     <h2 class="subtitulo display-6 fw-bold text-dark mb-3">Nuestro equipo en acción</h2>
-    <img src="../assets/img/personal.png" alt="Equipo De Trabajo">
+    <picture>
+<!-- Mobile -->
+    <source srcset="../assets/img/personal-400.png" media="(max-width: 576px)">
+<!-- Tablet -->
+    <source srcset="../assets/img/personal-800.png" media="(max-width: 992px)">
+<!-- Desktop -->
+    <source srcset="../assets/img/personal-1200.png" media="(min-width: 993px)">
+
+<!-- Fallback -->
+    <img src="../assets/img/personal.png" alt="Equipo De Trabajo" class="aparecer">
+</picture>
     <p class="lead text-secondary mb-4 text-dark">"Un integrante de nuestro equipo dando su mejor esfuerzo por cumplir los estandares de calidad de la empresa".</p>
 </div>
 </section>
 </main>
-<footer class="bg-dark text-white text-center py-4 mt-5">
-<p>&copy Noemi Shop</p> 
-<p>3516740151</p>
-<p>infonoemishop@gmail.com</p>
-<p>Blvd. Cangallo 3206</p>
+<footer class="footer footer-animado">
+    <div class="footer-container">
+    <div class="footer-item">
+        <p>&copy; Noemi Shop</p>
+        <p>3516740151</p>
+        <p>infonoemishop@gmail.com</p>
+        <p>Blvd. Cangallo 3206</p>
+    </div>
+    </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>

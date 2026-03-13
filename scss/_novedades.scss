@@ -49,3 +49,9 @@ a {
     @include mixins.boton(map.get(maps.$colors, primario));
 }
 }
+@include mixins.responsive(mobile) {
+.novedad {
+    width: 100%;
+    margin: 10px auto;
+}
+}

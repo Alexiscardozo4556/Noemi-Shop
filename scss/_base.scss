@@ -1,5 +1,7 @@
 // _base.scss
 @use 'variables' as v;
+@use 'maps';
+@use "sass:map";
 
 * {
 margin: 0;
@@ -11,4 +13,15 @@ font-family: v.$fuente-principal;
 background-color: v.$color-fondo;
 color: v.$color-texto;
 line-height: 1.6;
+}
+a:focus, button:focus {
+    outline: 2px solid map.get(maps.$colors, primario);
+    outline-offset: 2px;
+}
+
+a, button {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+a:hover, button:hover {
+    transform: scale(1.05);
 }

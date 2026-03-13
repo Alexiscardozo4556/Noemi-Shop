@@ -40,3 +40,8 @@ text-align: center;
 margin: 10px 0;
 font-weight: bold;
 }
+%seccion-base {
+padding: v.$padding-seccion;
+margin: 0 auto;
+max-width: 1200px;
+}

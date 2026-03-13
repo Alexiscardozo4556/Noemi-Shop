@@ -1,4 +1,4 @@
-// _header.scss corregido
+// _header.scss 
 @use 'variables' as v;
 
 .menu-navegacion {
@@ -12,6 +12,7 @@ width: 100%;
 .nav-link {
     font-size: 18px;
     color: v.$color-texto-claro;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 
     &:hover {
     color: v.$color-primario;

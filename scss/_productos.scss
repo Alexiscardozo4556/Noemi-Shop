@@ -7,9 +7,9 @@
 
 // Sección productos destacados
 .productos-destacados {
-background-color: map.get(maps.$colors, fondo-seccion);
-padding: v.$padding-seccion;
-text-align: center;
+background-color: red;
+padding: 20px;
+border: 4px dashed blue;
 
 article {
     @extend %card-base;
@@ -52,9 +52,13 @@ padding: v.$padding-general;
 }
 }
 
-.card {
-@extend %card-base;
-@include mixins.sombra();
+.card-animada {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+&:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
 
 img {
     width: 100%;       
@@ -64,5 +68,10 @@ img {
 }
 }
 
-
-
+.producto-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}

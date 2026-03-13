@@ -1,23 +1,29 @@
 // style.scss
 
-// Reset y base
+// 1. Reset y variables
 @use 'reset';
 @use 'variables';
+@use 'maps';
+
+// 2. Herramientas
 @use 'mixins';
 @use 'placeholders';
-@use 'maps';
-@use "sass:map";
+
+// 3. Base y estilos globales
 @use 'base';
-@use 'títulos';
+@use 'titulos';
 @use 'animations';
 
-// Componentes globales
+// 4. Componentes globales
 @use 'header';
 @use 'footer';
 
-// Secciones principales
+// 5. Secciones principales
 @use 'inicio';
 @use 'productos';
 @use 'novedades';
 @use 'nosotros';
 @use 'contacto';
+
+// 6. Bootstrap adaptado (al final para que tome tus overrides)
+@use 'bootstrap-adaptado';

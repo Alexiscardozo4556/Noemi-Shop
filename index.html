@@ -1,111 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio - Noemi Shop</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noemi Shop es tu tienda online de confianza en Córdoba. Descubre productos seleccionados con dedicación: botellas térmicas, copas de cristal, auriculares y más. Calidad, cercanía y estilo en cada compra.">
+    <meta name="keywords" content="Noemi Shop, tienda online, botellas térmicas, copas de cristal, auriculares, productos destacados, e-commerce Córdoba, compras online">
+    <title>Inicio - Noemi Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!--encabezado-->
+<!--encabezado-->
 <header class="menu-navegacion">
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="./assets/img/Noemi Shop.png" class="img-fluid" style="max-width: 200px;" alt="Logo de Noemi Shop"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-    <ul class="navbar-nav mb-2 mb-lg-0">
-    <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="pages/productos.html">Productos</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="pages/contacto.html">Contacto</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="pages/novedades.html">Novedades</a>
-    </li>
-    </ul>
-    </div>
-    </div>
-</nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/img/noemishoplogo.png" class="img-fluid" style="max-width: 200px;" alt="Logo de Noemi Shop"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/novedades.html">Novedades</a>
+                    </li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
 </header>
 <main>
-    <hr class="my-5 border-2 border-dark">
-  <h1 class="titulo display-6 fw-bold text-dark mb-3">Bienvenidos a Noemi Shop</h1>
-  <!--banner-->
-  <hr class="my-5 border-2 border-dark">
-    <section class="container my-5">
-  <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
+<hr class="my-5 border-2 border-dark">
+<h1 class="titulo display-6 fw-bold text-dark mb-3">Bienvenidos a Noemi Shop</h1>
+<!--banner-->
+<hr class="my-5 border-2 border-dark">
+<section class="container my-5">
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
     <div class="carousel-item active">
+    <picture>
+    <!-- Mobile -->
+    <source srcset="./assets/img/banner400.jpg" media="(max-width: 576px)">
+    <!-- Tablet -->
+    <source srcset="./assets/img/banner800.jpg" media="(max-width: 992px)">
+    <!-- Desktop -->
+    <source srcset="./assets/img/banner1200.jpg" media="(min-width: 993px)">
+    
+    <!-- Fallback -->
     <img src="./assets/img/banner.jpg" class="d-block w-100" alt="clientes visitando nuestra tienda">
+    </picture>
     </div>
     <div class="carousel-item">
-    <img src="./assets/img/banner2.jpg" class="d-block w-100" alt="clientes viendo nuestros productos">
+    <picture>
+    <!-- Mobile -->
+    <source srcset="./assets/img/banner2-400.jpg" media="(max-width: 576px)">
+    <!-- Tablet -->
+    <source srcset="./assets/img/banner2-800.jpg" media="(max-width: 992px)">
+    <!-- Desktop -->
+    <source srcset="./assets/img/banner2-1200.jpg" media="(min-width: 993px)">
+    
+    <!-- Fallback -->
+    <img src="./assets/img/banner.jpg" class="d-block w-100" alt="clientes visitando nuestra tienda">
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </section>
-  <!--nuestros productos-->
-  <hr class="my-5 border-2 border-dark">
-  <section class="container my-5">
-  <h2 class="subtitulo display-6 fw-bold text-dark mb-3">Conocé nuestros productos destacados</h2>
-  <div class="row text-center">
-    <div class="col-md-4 mb-4">
-      <img src="./assets/img/Botellas-termicas.png" class="img-fluid rounded" alt="Botellas Termicas">
-      <h3>Botellas Térmicas</h3>
-      <p>$15.000</p>
-<a href="./pages/productos.html" class="btn btn-outline-secondary">Conocé más</a>
+<!--nuestros productos-->
+        <hr class="my-5 border-2 border-dark">
+<section class="container my-5">
+        <h2 class="subtitulo display-6 fw-bold text-dark mb-3">Conocé nuestros productos destacados</h2>
+    <div class="row text-center">
+    <div class="col-md-4 mb-4 card-animada">
+    <picture>
+    <source srcset="./assets/img/Botellas-termicas-400.png" media="(max-width: 576px)">
+    <source srcset="./assets/img/Botellas-termicas-800.png" media="(max-width: 992px)">
+    <source srcset="./assets/img/Botellas-termicas-1200.png" media="(min-width: 993px)">
+    <img src="./assets/img/Botellas-termicas.png" class="img-fluid rounded" alt="Botellas Térmicas">
+
+    </picture>
+        <h3>Botellas Térmicas</h3>
+        <p>$15.000</p>
+        <a href="./pages/productos.html" class="btn btn-outline-secondary">Conocé más</a>
     </div>
-    <div class="col-md-4 mb-4">
-      <img src="./assets/img/copas.jpg" class="img-fluid rounded" alt="Copas De Cristal">
-      <h3>Copas De Cristal</h3>
-      <p>$6.000</p>
-<a href="./pages/productos.html" class="btn btn-outline-secondary">Conocé más</a>
+    <div class="col-md-4 mb-4 card-animada">
+    <picture>
+    <source srcset="./assets/img/copas-400.jpg" media="(max-width: 576px)">
+    <source srcset="./assets/img/copas-800.jpg" media="(max-width: 992px)">
+    <source srcset="./assets/img/copas-1200.jpg" media="(min-width: 993px)">
+    <img src="./assets/img/copas.jpg" class="img-fluid rounded" alt="Copas de vidrio">
+    </picture>
+        <h3>Copas De Cristal</h3>
+        <p>$6.000</p>
+        <a href="./pages/productos.html" class="btn btn-outline-secondary">Conocé más</a>
     </div>
-    <div class="col-md-4 mb-4">
-      <img src="./assets/img/auriculares.jpg" class="img-fluid rounded" alt="Auriculares">
-      <h3>Auriculares</h3>
-      <p>$35.000</p>
-<a href="./pages/productos.html" class="btn btn-outline-secondary">Conocé más</a>
+    <div class="col-md-4 mb-4 card-animada">
+    <picture>
+    <source srcset="./assets/img/auriculares-400.jpg" media="(max-width: 576px)">
+    <source srcset="./assets/img/auriculares-800.jpg" media="(max-width: 992px)">
+    <source srcset="./assets/img/auriculares-1200.jpg" media="(min-width: 993px)">
+    <img src="./assets/img/auriculares.jpg" class="img-fluid rounded" alt="Auriculares">
+
+    </picture>
+        <h3>Auriculares</h3>
+        <p>$35.000</p>
+        <a href="./pages/productos.html" class="btn btn-outline-secondary">Conocé más</a>
     </div>
-  </div>
+    </div>
 </section>
-<hr class="my-5 border-2 border-dark">
+        <hr class="my-5 border-2 border-dark">
 <!--un poco de nosotros-->
 <section class="text-center my-5">
-  <div class="container">
-    <h2 class="display-6 fw-bold text-dark mb-3">Conocenos un poco más...</h2>
-    <p class="lead text-secondary mb-4 text-dark">Conocer a Noemí Shop es descubrir un espacio donde la dedicación y el buen gusto se encuentran para ofrecer productos pensados con detalle y cariño. Desde su presentación profesional hasta la calidez que transmite, la tienda refleja un compromiso con la calidad y la cercanía, invitando a cada cliente a sentirse parte de una experiencia única. Es más que un lugar de compras: es un proyecto familiar que transmite identidad, esfuerzo y pasión en cada propuesta.</p>
-<a href="./pages/nosotros.html" class="btn btn-outline-secondary">Conocenos</a>
-  </div>  
+    <div class="container">
+        <h2 class="display-6 fw-bold text-dark mb-3">Conocenos un poco más...</h2>
+        <p class="lead text-secondary mb-4 text-dark">Conocer a Noemí Shop es descubrir un espacio donde la dedicación y el buen gusto se encuentran para ofrecer productos pensados con detalle y cariño. Desde su presentación profesional hasta la calidez que transmite, la tienda refleja un compromiso con la calidad y la cercanía, invitando a cada cliente a sentirse parte de una experiencia única. Es más que un lugar de compras: es un proyecto familiar que transmite identidad, esfuerzo y pasión en cada propuesta.</p>
+        <a href="./pages/nosotros.html" class="btn btn-outline-secondary">Conocenos</a>
+    </div>  
 </section>
 </main>
-<footer class="footer">
-  <div class="footer-container">
+<footer class="footer footer-animado">
+<div class="footer-container">
     <div class="footer-item">
-    <p>&copy; Noemi Shop</p>
-    <p>3516740151</p>
-    <p>infonoemishop@gmail.com</p>
-    <p>Blvd. Cangallo 3206</p>
-  </div>
+        <p>&copy; Noemi Shop</p>
+        <p>3516740151</p>
+        <p>infonoemishop@gmail.com</p>
+        <p>Blvd. Cangallo 3206</p>
+</div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
